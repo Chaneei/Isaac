@@ -1,0 +1,412 @@
+@charset "utf-8";
+
+section {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.main {
+    height: 250px;
+    width: 100%;
+    background: url(img/news_banner.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.mtxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.mtxt h2 {
+    color: #d3313a;
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.mtxt > p {
+    font-size: 14px;
+}
+
+/*******top-menu*************/
+.top-menu {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top-menu .tmenu-b {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.tmenu {
+    width: 100%;
+}
+
+.tmenu:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.tmenu > li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #eee;
+    transition: 0.5s;
+}
+
+.top-menu li:first-child {
+    border-left: 1px solid #eee;
+    border-right: 0;
+}
+
+
+.tmenu li > a {
+    color: #333;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+
+li.selM {
+    background-color: rgba(211, 49, 58, 0.8);
+    border-right: 0;
+}
+
+li.selM a {
+    color: #fff;
+}
+
+/************noticewrap*************/
+.noticewrap {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.noticewrap h2 {
+    text-align: center;
+    font-size: 22px;
+    font-size: 1.375rem;
+    color: #d3313a;
+}
+
+.noticewrap p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+/*placeholder 색상변경*/
+input::placeholder {
+    color: #ccc;
+}
+
+
+/*** list.html ************************************/
+section .searchBox {
+    width: 100%;
+    height: 60px;
+    border-radius: 0px 10px 0 10px;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 50px;
+}
+
+section .searchBox .keyword {
+    display: inline-block;
+}
+
+section .searchBox .keyword input {
+    display: inline-block;
+    height: 32px;
+    width: 95%;
+    margin-top: 5%;
+    padding-left: 10px;
+    border-color: #eee;
+
+
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+section .searchBox button {
+    height: 35px;
+    padding: 0 30px;
+    display: inline-block;
+    background: #d3313a;
+    border: 0;
+    color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+
+
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+
+
+
+/** noticeBox > table **/
+.noticeBox {
+    width: 100%;
+    position: relative;
+}
+
+.noticeBox table {
+    width: 100%;
+    border-top: 2px solid #d3313a;
+    border-bottom: 1px solid #2c2a29;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.noticeBox table th,
+.noticeBox table td {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.noticeBox table td {
+    text-align: center;
+    line-height: 25px;
+    height: 25px;
+}
+
+.noticeBox table td.title {
+    text-align: center;
+    padding: 0 10px;
+    letter-spacing: -0.5px;
+    word-break: keep-all;
+}
+
+.noticeBox table td.title a {
+    color: #333;
+}
+
+.noticeBox table td.title a:hover {
+    text-decoration: underline;
+}
+
+.noticeBox .writeBtn {
+    display: inline-block;
+    margin: 30px 0;
+}
+
+.noticeBox .writeBtn button {
+    /*display: inline-block;*/
+    padding: 10px 40px;
+    background: #d3313a;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+
+
+/***********input********************/
+.inputBox {
+    width: 100%;
+}
+
+.inputBox .input {
+    width: 90%;
+    margin-top: 50px;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 0 30px 0 30px;
+}
+
+.inputBox .input > div {
+    width: 100%;
+}
+
+.inputBox .input .title {
+    margin-bottom: 10px;
+}
+
+.inputBox .input span {
+    width: 90%;
+    line-height: 30px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    font-size: 0.875rem;
+    background-color: #d3313a;
+    color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.inputBox .input input {
+    display: inline-block;
+    width: 89.5%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    text-indent: 10px;
+    background: #fff;
+    margin-top: -1px;
+
+}
+
+.inputBox .input .content span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.inputBox .input .content textarea {
+    height: 300px;
+    width: 89.5%;
+    border: 1px solid #ccc;
+    display: inline-block;
+    text-indent: 10px;
+    margin-top: -1px;
+    outline: 0;
+}
+
+.inputBox .btngrp {
+    text-align: center;
+}
+
+.inputBox .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #d3313a;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+/*************view********************/
+.viewBox {
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.viewBox table {
+    width: 100%;
+    border-top: 2px solid #d3313a;
+    border-bottom: 1px solid #2c2a29;
+    padding: 10px 0;
+    border-collapse: collapse;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.viewBox .writer {
+    padding-left: 10px;
+}
+
+.viewBox table th,
+.viewBox table td {
+    border-bottom: 1px solid #ccc;
+    /*padding: 10px 0;*/
+}
+
+.viewBox table th.title {
+    text-align: center;
+    padding: 5px 0 5px 5px;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.viewBox table td.writer {
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.viewBox table td.content {
+    padding: 20px 0 100px 10px;
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.viewBox .btngrp {
+    position: absolute;
+    right: 0;
+}
+
+.viewBox .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #d3313a;
+    color: #fff;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+
+.pageBox {
+    width: 100%;
+    margin-top: 150px;
+    border-collapse: collapse;
+    border-top: 2px solid #2c2a29;
+}
+
+.pageBox th,
+.pageBox td {
+    padding: 10px;
+    line-height: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.pageBox th {
+    width: 20%;
+    background-color: #f4f4f2;
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.pageBox td {
+    padding-left: 14px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    word-break: keep-all;
+}
+
+.pageBox td a {
+    color: #555;
+}
+
+.pageBox td a:hover {
+    text-decoration: underline;
+}

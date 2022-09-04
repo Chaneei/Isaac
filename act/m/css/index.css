@@ -1,0 +1,544 @@
+@charset "utf-8";
+
+/************main***********/
+/*.main {*/
+/*
+    margin-top: 80px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 400%;
+    position: relative;
+    left: 0;
+}
+
+.main .slide > a {
+    height: 100%;
+    float: left;
+    width: 25%;
+    display: block;
+    position: relative;
+}
+*/
+
+/*
+.main .slide > a > img {
+    float: left;
+    display: block;
+    width: 100%;
+}
+*/
+
+.swiper-container {
+    margin-top: 80px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-wrapper {
+    width: 300%;
+    position: relative;
+    left: 0;
+}
+
+.swiper-wrapper > a {
+    height: 100%;
+    float: left;
+    width: 33.33%;
+    display: block;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-wrapper > a > img {
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+/*
+.btngrp {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+}
+
+.btngrp li {
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    float: left;
+    margin-right: 10px;
+    color: #eee;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btngrp li:last-child {
+    margin-right: 0;
+}
+*/
+
+/*************menu******************/
+.menu {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 26px;
+    font-size: 1.625rem;
+    margin-bottom: 50px;
+    letter-spacing: -0.7px;
+}
+
+
+.menu > p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    margin-bottom: 50px;
+    letter-spacing: -0.7px;
+}
+
+
+.ch-grid {
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.ch-grid:after,
+.ch-item:before {
+    content: '';
+    display: table;
+}
+
+.ch-grid:after {
+    clear: both;
+}
+
+.ch-grid li {
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    margin: 40px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.ch-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    cursor: default;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ch-grid.active li {
+    opacity: 1;
+}
+
+.ch-grid.active li:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.ch-grid.active li:nth-child(2) {
+    transition-delay: 0.5s;
+}
+
+.ch-grid.active li:nth-child(3) {
+    transition-delay: 0.8s;
+}
+
+.ch-thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.ch-img-1 {
+    background: #f2edee url(../img/menu1.png);
+    background-repeat: no-repeat;
+    background-size: 140px 140px;
+    background-position: center;
+}
+
+.ch-img-2 {
+    background: #f2edee url(../img/menu2.png);
+    background-repeat: no-repeat;
+    background-size: 140px 140px;
+    background-position: center;
+}
+
+.ch-img-3 {
+    background: #f2edee url(../img/menu3.png);
+    background-repeat: no-repeat;
+    background-size: 140px 140px;
+    background-position: center;
+}
+
+.ch-grid li > p {
+    padding-top: 20px;
+    color: #333;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+
+/*******************deli************************/
+.deli {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: url(../img/deli-bg.png) repeat-x bottom;
+    background-size: 100% auto;
+    position: relative;
+}
+
+.deli h2 {
+    text-align: center;
+    font-size: 26px;
+    font-size: 1.625rem;
+    margin-bottom: 50px;
+    letter-spacing: -0.7px;
+}
+
+.deli p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-size: 1rem;
+    letter-spacing: -0.6px;
+}
+
+.deli-wrap .delibtn {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.delibtn {
+    width: 45%;
+    font: 16px/50px Verdana, "맑은 고딕";
+    padding: 5px;
+    text-align: center;
+    height: 40px;
+    text-indent: 20px;
+    background: rgba(211, 49, 57, 0.9) url(../img/deli_icon.png) no-repeat;
+    border-radius: 10px 0px 10px 0px;
+    background-size: 30px 30px;
+    background-position: 15px 10px;
+}
+
+div.delibtn > a {
+    position: absolute;
+    display: block;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.moter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.moter img {
+    width: 30px;
+}
+
+/**************comu***********************/
+.comu {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.comu h2 {
+    text-align: center;
+    font-size: 26px;
+    font-size: 1.625rem;
+    margin-bottom: 50px;
+    letter-spacing: -0.7px;
+}
+
+.cm-video iframe {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.comu-wrap {
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.comuslider {
+    width: 500%;
+    position: relative;
+    left: 0;
+}
+
+.comu-wrap .comu-box {
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+
+.comu-box a {
+    display: inline-block;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.comu-box a img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.comu-box .txt-box .title {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.comu-box .txt-box .des {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    word-break: keep-all;
+    letter-spacing: -0.6px;
+}
+
+.dot {
+    font-size: 0;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.dot span {
+    cursor: pointer;
+}
+
+.dot .playbtn img {
+    width: 20px;
+    height: 20px;
+}
+
+.dot .stopbtn {
+    margin-right: 10px;
+}
+
+.dot .stopbtn img {
+    width: 20px;
+    height: 20px;
+}
+
+/**************start***********************/
+.start {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.start > h2 {
+    text-align: center;
+    font-size: 26px;
+    font-size: 1.625rem;
+    margin-bottom: 50px;
+    letter-spacing: -0.7px;
+}
+
+.start > h3 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.start-wrap {
+    position: relative;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.5) url(../img/startup-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.start-wrap.active {
+    opacity: 1;
+}
+
+.start-wrap > p {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-size: 1.125rem;
+    letter-spacing: -0.5px;
+    padding-top: 200px;
+}
+
+.stbtn {
+    width: 50%;
+    position: relative;
+    font: 16px/50px Verdana, "맑은 고딕";
+    padding: 5px;
+    text-align: center;
+    height: 40px;
+    text-indent: 20px;
+    background: rgba(211, 49, 57, 0.9) url(../img/start_icon.png) no-repeat;
+    border-radius: 10px 0px 10px 0px;
+    background-size: 30px 25px;
+    background-position: 15px 10px;
+
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+}
+
+.stbtn > a {
+    position: absolute;
+    display: block;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/****************sns***********************/
+.sns {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.sns > h2 {
+    text-align: center;
+    font-size: 26px;
+    font-size: 1.625rem;
+    margin-bottom: 50px;
+    letter-spacing: -0.7px;
+}
+
+.snsbtn {
+    width: 80%;
+    position: relative;
+    font: 15px/50px Verdana, "맑은 고딕";
+    padding: 5px;
+    text-align: center;
+    height: 40px;
+    background: rgba(211, 49, 57, 0.9) no-repeat;
+    border-radius: 10px 0px 10px 0px;
+    position: absolute;
+    left: 50%;
+    letter-spacing: -0.8px;
+    transform: translateX(-50%);
+}
+
+.snsbtn > a {
+    /*버튼 속박스*/
+    position: absolute;
+    display: block;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    word-break: keep-all;
+}
+
+
+.sns-wrap {
+    width: 100%;
+    margin-top: 130px;
+}
+
+.sns-img {
+    float: left;
+    width: 50%;
+}
+
+.sns-img > a {
+    width: 100%;
+    display: block;
+}
+
+.sns-img a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#loadMore {
+    display: inline-block;
+    color: #fff;
+    border-radius: 0 10px 0 10px;
+    text-align: center;
+    margin: 50px auto 0;
+    transition: all .5s;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#loadMore img {
+    width: 50px;
+    height: 50px;
+    filter: invert(24%) sepia(91%) saturate(2568%) hue-rotate(342deg) brightness(88%) contrast(87%);
+}
